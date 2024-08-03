@@ -175,7 +175,7 @@ export function Component() {
         <Button
           variant='ghost'
           size='icon'
-          className='lg:hidden relative'
+          className='lg:hidden relative mr-4'
           onClick={(e) => {
             e.stopPropagation();
             toggleDropdown();
@@ -235,7 +235,7 @@ export function Component() {
       <section
         id='hero'
         className='w-full py-12 md:py-24 lg:py-32 bg-muted dark:bg-background px-10 md:px-20 lg:px-32'>
-        <div className='container flex sm:flex-col lg:flex-row items-center justify-center gap-10 px-4 md:px-6 '>
+        <div className='container flex flex-col lg:flex-row items-center justify-center gap-10 px-4 md:px-6 '>
           <Image
             src='/perfil.png'
             width='350'
@@ -245,7 +245,7 @@ export function Component() {
           />
           <div className='space-y-4 self-center'>
             <h1
-              className='text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl font-gabarito leading-6 
+              className='text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl leading-8
             space-x-4 '>
               {isEnglish ? "Hi, I'm" : 'Hola, soy'}
               <em className=' '> Bruno Guerra.</em> <br />{' '}
